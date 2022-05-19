@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/*font-family: 'Source Serif Pro', serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Fredoka One', cursive;*/
+/*font-family: 'Satisfy', cursive;*/
+body{
+	font-family: 'Raleway', sans-serif;
+	background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(151,190,255,0.700717787114846) 50%, rgba(253,253,253,1) 100%);
+    animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s both;
+}
+@keyframes fade-in{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.font-personal-1{
+	font-family: 'Permanent Marker', cursive;
+}
+.font-personal-2{
+	font-family: 'Source Serif Pro', serif;
+}
+.font-personal-3{
+	font-family: 'Fredoka One', cursive;
+}
+.font-personal-4{
+	font-family: 'Satisfy', cursive;
+}
+.bg-fondo{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-cover{
+	height: 100vh!important;
+	background-image: url('../assets/fondo_1.jpg')!important;
+	background-position: center!important;
+	background-attachment: fixed!important;
+	background-size: cover;
+}
+.shadow-text{
+	text-shadow: -5px 3px 10px #7f1936;
+}
+.h-91{
+	height: 91%;
+}
+#icon{
+	width: 30px;
+}
+.shadow-box{
+	box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 70%);
+}
+.bg-fondo-obras{
+	background: linear-gradient(45deg, rgba(91,33,57,1) 20%, rgba(99,26,47,1) 49%, rgba(99,1,99,1) 86%, rgba(50,2,84,1) 94%);
+}
+.bg-fondo-obras-2{
+	background: linear-gradient(240deg, rgba(91,33,57,1) 20%, rgba(99,26,47,1) 49%, rgba(99,1,99,1) 86%, rgba(50,2,84,1) 94%);
+}
+.btn-fondo-2{
+	color: #ffffff!important;
+    border-color: #ffffff!important;
+    border: 2px solid!important;
+}
+.btn-fondo-2:hover{
+	color: #fff!important;
+    background-color: #123948!important;
+    border-color: #123948!important;
+}
+/* From uiverse.io */
+.boton button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+.boton button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+.boton button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background-color: #123948;
+ border-radius: 1.625rem;
+}
+
+.boton button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+.boton button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+.boton button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+.boton button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: white;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.boton button:hover .circle {
+ width: 100%;
+}
+
+.boton button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+.boton button:hover .button-text {
+ color: #fff;
+}
