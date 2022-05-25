@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=Source+Serif+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 /*font-family: 'Source Serif Pro', serif;*/
 /*font-family: 'Raleway', sans-serif;*/
 /*font-family: 'Fredoka One', cursive;*/
 /*font-family: 'Satisfy', cursive;*/
+/*font-family: 'Sacramento', cursive;*/
 body{
 	font-family: 'Raleway', sans-serif;
 	background: radial-gradient(circle, rgba(198,208,246,1) 27%, rgba(154,154,170,1) 100%);
@@ -20,7 +22,8 @@ body{
   }
 }
 .font-personal-1{
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Sacramento', cursive;
+  font-size: 31px!important;
 }
 .font-personal-2{
 	font-family: 'Source Serif Pro', serif;
@@ -38,8 +41,8 @@ body{
 	background-attachment: fixed!important;
 	background-size: cover;
 }
-.bg-cover span{
-  background-color: rgba(0, 0, 0, 0.2);
+.bg-cover span, .bg-cover-contacto span, .bg-cover-quienes-somos span{
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -47,6 +50,20 @@ body{
 .bg-cover-expresate{
   height: 100vh!important;
   background-image: url('../assets/fondo_pinceles.jpg')!important;
+  background-position: center!important;
+  background-attachment: fixed!important;
+  background-size: cover;
+}
+.bg-cover-contacto{
+  height: 100vh!important;
+  background-image: url('../assets/contacto_1.jpg')!important;
+  background-position: center!important;
+  background-attachment: fixed!important;
+  background-size: cover;
+}
+.bg-cover-quienes-somos{
+  height: 100vh!important;
+  background-image: url('../assets/fantasy.jpg')!important;
   background-position: center!important;
   background-attachment: fixed!important;
   background-size: cover;
@@ -85,6 +102,33 @@ body{
 .animacion-2:hover{
   transform: scale(1.03);
 }
+.animacion-3{
+
+}
+.animacion-3:hover{
+  animation: vibrate-1 0.3s linear infinite both;
+}
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 .animacion-texto{
   animation: text-focus-in 1.3s linear both;
 }
@@ -263,20 +307,67 @@ body{
 .boton button:hover .button-text {
   color: #fff;
 }
-/* From uiverse.io by @Yaseen549 */
-.animacion-input{
-   border: none;
-   border-radius: 15px;
-   padding: 15px;
-   background-color: #e8e8e8;
-   box-shadow: 6px 6px 12px #ffffff,
-               -6px -6px 12px #c5c5c5;
-   font-size: medium;
-   font-weight: bold;
+
+/* From uiverse.io */
+.boton2 button {
+  padding: 1em 2em;
+  margin: 1em 0em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.boton2 button:hover {
+  background-color: #00c2c3;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.boton2 button:active {
+  transform: translateY(-1px);
+}
+
+/* From uiverse.io by @alexruix */
+.animacion-input-2 {
+   line-height: 28px;
+   border: 2px solid transparent;
+   border-bottom-color: #fff;
+   padding: .2rem 0;
+   outline: none;
+   background-color: transparent;
+   color: #fff;
+   transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
    width: 350px;
 }
 
-.animacion-input:focus {
-   outline-color: white;
-   place-content: "Enter your message!";
+.animacion-input-2:focus, input:hover, textarea:hover {
+   outline: none;
+   padding: .2rem 1rem;
+   border-radius: 1rem;
+   border-color: #fff;
 }
+
+.animacion-input-2::placeholder {
+   color: #fff;
+}
+
+.animacion-input-2:focus::placeholder {
+   opacity: 0;
+   transition: opacity .3s;
+}
+
+
+
+
+
+
